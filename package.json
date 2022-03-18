@@ -1,0 +1,24 @@
+{
+  "name": "nft-marketplace",
+  "version": "1.0.0",
+  "description": "My NFT Marketplace",
+  "author": "Igor Lourenço dos Santos",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-solhint": "^2.0.0",
+    "ethers": "^5.4.1",
+    "hardhat": "^2.4.3"
+  },
+  "scripts": {
+    "compile": "yarn hardhat compile",    
+    "marketplace:deploy": "yarn hardhat run scripts/deploy-marketplace.js --network rinkeby",
+    "nft:deploy": "yarn hardhat run scripts/deploy-nft.js --network rinkeby",
+    "test": "yarn hardhat test --network localhost"
+  },
+  "dependencies": {
+    "@alch/alchemy-web3": "^1.1.1",
+    "@openzeppelin/contracts": "^4.2.0",
+    "dotenv": "^10.0.0"
+  }
+}
